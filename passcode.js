@@ -1,4 +1,4 @@
-const passcode = "1200532006";
+const passcode = "040324";
 let enteredPin = "";
 
 function appendDigit(digit) {
