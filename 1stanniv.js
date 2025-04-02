@@ -1,3 +1,13 @@
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+}
+
+window.onload = function() {
+  if (sessionStorage.getItem("authenticated") !== "true") {
+    window.location.href = "index.html";
+  }
+};
+
 const ANIMATION_DURATION = 500;
   
 function padNumber(num) {
@@ -41,3 +51,11 @@ function updateElement(id, newValue) {
 
 setInterval(updateStopwatch, 1000);
 updateStopwatch();
+
+const getNavigationHeight = document.querySelector('.navbar').offsetHeight;
+
+document.documentElement.style.setProperty('--scroll-padding', getNavigationHeight + "px");
+
+
+
+
