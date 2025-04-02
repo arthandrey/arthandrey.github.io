@@ -314,6 +314,14 @@ img, svg, picture, video{
   color: rgb(56, 15, 26);
 }
 
+.navbar ul li a,
+.months-dropdown-menu ul li {
+  -webkit-user-select: none;
+  -moz-user-select: none;    
+  -ms-user-select: none;      
+  user-select: none;          
+}
+
 .stopwatch-sect {
   background-color: #fcedf1;
   padding: 0 1rem;
