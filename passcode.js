@@ -32,3 +32,17 @@ function checkPin() {
     clearDisplay();
   }
 }
+
+document.querySelectorAll(".numButton").forEach(button => {
+  button.addEventListener("touchstart", function () {
+    this.classList.add("active-effect");
+    setTimeout(() => this.classList.remove("active-effect"), 69);
+  });
+});
+
+document.querySelectorAll(".enterBtn").forEach(button => {
+  button.addEventListener("touchstart", function () {
+    this.classList.add("active-effect-2");
+    setTimeout(() => this.classList.remove("active-effect-2"), 69);
+  });
+});

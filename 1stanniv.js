@@ -2,7 +2,7 @@ window.onbeforeunload = function () {
   window.scrollTo(0, 0);
 }
 
-window.onload = function() {
+window.onload = function () {
   if (sessionStorage.getItem("authenticated") !== "true") {
     window.location.href = "index.html";
   }
